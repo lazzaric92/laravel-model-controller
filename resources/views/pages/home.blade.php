@@ -3,18 +3,16 @@
 @section('page-title', 'Homepage')
 
 @section('main-content')
-    <h1>
-        Movies List
-    </h1>
+    <h1 class="fw-bold p-3 text-center"> Movies List </h1>
 
     <section id="movies-list">
         <div class="movies-wrapper container-fluid d-flex flex-wrap justify-content-center py-4 px-5">
             @foreach ($movies as $movie)
-                <article class="card mx-2 mb-4">
+                <article class="card mx-2 mb-4 bg-transparent text-white">
                     <div class="card-body d-flex flex-column">
                         <div>
                             <h5 class="card-title mb-2 fw-bold"> {{ $movie->title }} </h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary"> {{ $movie->original_title }} </h6>
+                            <h6 class="card-subtitle mb-4"> {{ $movie->original_title }} </h6>
                         </div>
                         <div class="card-info mt-auto">
                             <p class="card-text mb-1">Nationality: {{$movie->nationality}} </p>

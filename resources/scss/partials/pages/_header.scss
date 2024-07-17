@@ -1,0 +1,15 @@
+#app-header{
+    a{
+        color: white;
+    }
+
+    li:hover {
+        transform: scale(1.2);
+        transition: all .1s linear;
+        background-color: rgba(203, 179, 179, 0.2);
+
+        a{
+            color: limegreen;
+        }
+    }
+}

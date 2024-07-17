@@ -4,3 +4,17 @@
 @import "./partials/pages/header.scss";
 @import "./partials/pages/footer.scss";
 @import "./partials/pages/home-main.scss";
+
+body {
+    background-color: #131313;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}

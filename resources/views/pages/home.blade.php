@@ -12,7 +12,9 @@
                     <div class="card-body d-flex flex-column">
                         <div>
                             <h5 class="card-title mb-2 fw-bold"> {{ $movie->title }} </h5>
-                            <h6 class="card-subtitle mb-4"> {{ $movie->original_title }} </h6>
+                            @if ($movie->original_title <> $movie->title)
+                                <h6 class="card-subtitle mb-4"> {{ $movie->original_title }} </h6>
+                            @endif
                         </div>
                         <div class="card-info mt-auto">
                             <p class="card-text mb-1">Nationality: {{$movie->nationality}} </p>
